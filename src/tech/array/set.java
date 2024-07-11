@@ -9,13 +9,14 @@ import java.util.TreeSet;
 public class set {
     public static void main(String[] args) {
         Set<Integer> set =new HashSet<>();
-        HashSet <Integer> set1= new HashSet<>();
-        HashSet<Integer> set2= new LinkedHashSet<>();
-       // LinkedHashSet<Integer> set4= new LinkedHashSet<>();
-        TreeSet<Integer> set3 = new TreeSet<>();
-        int []a ={1,3,4,6,7,2,3,1,5};
+        HashSet <Integer> set1= new HashSet<>();// phan tu ngau nhien, khong co thu tu
+       // HashSet<Integer> set2= new LinkedHashSet<>();// theo thu tu them vao -> dem so phan tu khac nhau
+        LinkedHashSet<Integer> set2= new LinkedHashSet<>();
+       // TreeSet<Integer> set3 = new TreeSet<>(); // sap xep tang dan
+        Set<Integer> set3 = new TreeSet<>(); // sap xep tang dan
+        int []a ={70,100,9,4,1,3,4,6,7,2,3,1,5};
         int []b ={1,3,4,6,7,2,3,1,5};
-        int []c ={1,3,4,6,7,2,3,1,5};
+        int []c ={100,9,4,1,3,4,6,7,2,3,1,5};
 
         for (int x: a
              ) {
