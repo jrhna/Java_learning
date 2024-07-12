@@ -25,6 +25,7 @@ public class arrayList
         for (int i  = 0 ;i < a.size() ; i++){
             System.out.print(a.get(i) + " ");
         }
+        System.out.println("Tang tung phan tu trong array list lên 1 đơn vị: ?");
         System.out.println("\nIndex");
         for (int i  = 0 ;i < a.size() ; i++){
             System.out.print(a.indexOf(i) + " ");

@@ -14,7 +14,7 @@ public class set {
         LinkedHashSet<Integer> set2= new LinkedHashSet<>();
        // TreeSet<Integer> set3 = new TreeSet<>(); // sap xep tang dan
         Set<Integer> set3 = new TreeSet<>(); // sap xep tang dan
-        int []a ={70,100,9,4,1,3,4,6,7,2,3,1,5};
+        int []a ={70,100,9,4,1,3,4,6,7,2,3,1};
         int []b ={1,3,4,6,7,2,3,1,5};
         int []c ={100,9,4,1,3,4,6,7,2,3,1,5};
 
@@ -22,6 +22,9 @@ public class set {
              ) {
             set.add(x);
         }
+        System.out.println(set.size());
+        set.remove(1);
+        set.remove(5000);// nếu remove kí tự ko có -> aborted called, segmentation fault, runtime error
         System.out.print("HashSet:");
         for (int x: set
         ) {
