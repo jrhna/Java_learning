@@ -64,7 +64,8 @@ public class string {
         // Tách các từ trong xâu: Sử dụng hàm split và regex
                     //split: Để tách các từ trong xâu theo dấu cách ta sử dụng hàm, hàm này trả về 1 mảng chứa các từ trong xâu.
         String splitString = "learning      java    !!";
-        String [] arr = splitString.split("\\s+");
+       // String [] arr = splitString.split("\\s+"); //loại bỏ hết dấu cách
+        String [] arr = splitString.split(" ");// cắt dấu cách dầu tiên
         for ( String x: arr) System.out.println(x);
         //Sử dụng lớp StringTokenizer
         System.out.println("Sử dụng lớp StringTokenizer");
