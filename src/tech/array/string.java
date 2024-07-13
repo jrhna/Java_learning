@@ -25,6 +25,8 @@ public class string {
             System.out.println(lastName.charAt(i));
         }
         System.out.println("chuyen tu string sang char array");
+        System.out.println("toCharArray: Đây là một phương thức hữu ích khi bạn cần xử lý từng ký tự trong chuỗi một cách độc lập.");
+        System.out.println("là một phương thức của lớp String và StringBuilder, được sử dụng để chuyển đổi chuỗi thành một mảng các ký tự (char[]).");
         for (char x: lastName.toCharArray()){
             System.out.print( x + " ");
         }
@@ -80,5 +82,9 @@ public class string {
         //isAlphabetic(char c) Kiểm tra chữ cái
         //char toLower(char c) Chuyển thành chữ in thường
         //char toUpper(char c) Chuyển thành chữ in hoa
+//        String lastName = " ngoc anh";
+//        for (String x: lastName){
+//            System.out.print(x);
+//        }
     }
 }
