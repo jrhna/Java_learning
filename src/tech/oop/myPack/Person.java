@@ -1,19 +1,19 @@
 package tech.oop.myPack;
 
 public class Person {
-    public String name;
-    public int age;
-    private float height;
-     public Person (String name, int age, float height){
-         this.name = name;
-         this.age=age;
-         this.height = height;
+    public String ten;
+    public int tuoi;
+    private float chieuCao;
+     public Person (String name, int tuoi, float chieuCao){
+         this.ten = name;
+         this.tuoi=tuoi;
+         this.chieuCao = chieuCao;
      }
      public void xinChao (){
-        System.out.println(name + " " + "toi " + age +" tuoi");
+        System.out.println(ten + " " + "toi " + tuoi +" tuoi");
     }
-    public float getHeight(){
-         return height;
+    public float getChieuCao(){
+         return chieuCao;
     }
 
 
