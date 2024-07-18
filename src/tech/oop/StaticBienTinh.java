@@ -5,7 +5,7 @@ public class StaticBienTinh {
         static String course;
 
         static {
-            System.out.println("HowKteam");
+            System.out.println("HowKteam");//chay truoc
             course = "Java core";
         }
 

@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Demo {
     public static void main(String[] args) {
         SinhVien a = new SinhVien();
+
         a.greet();
         System.out.println("Person");
         Scanner sc = new Scanner(System.in);
