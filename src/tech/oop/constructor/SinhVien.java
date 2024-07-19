@@ -29,8 +29,10 @@ public class SinhVien {
     public void setName(String name){
         this.name=name;
     }
-    public void setGpa(float gpa) {
+    public void setGpa(double gpa) {
+        if (gpa >= 0 &&  gpa < 4 )
         this.gpa = gpa;
+        else System.out.println("Error gpa");
     }
     public String toString (){
         return this.id + " " + this.name + " " + this.gpa;
