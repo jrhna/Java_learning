@@ -30,7 +30,9 @@ public class JFrameExample {
             public void actionPerformed(ActionEvent e) {
                 //System.out.println("Submit");
                // System.out.println(username.getText());
-              //  System.out.println(password.getPassword());
+                System.out.println(password.getPassword()); // trả về mảng char
+                String s = String.valueOf(password.getPassword()); // chuển từ mảng char thành String
+                JOptionPane.showMessageDialog(frame,"done"); // hiển thị pop up
                 buttonSubmit.setText("Done!");
             }
         });
