@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="tech.oop.TaiXiu">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-1745074"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="de458" class="javax.swing.JCheckBox" binding="đặtXĩuCheckBox" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12065476"/>
+          <enabled value="true"/>
+          <font name="Lucida Sans Typewriter" size="36" style="1"/>
+          <foreground color="-12636187"/>
+          <text value="Đặt xĩu"/>
+        </properties>
+      </component>
+      <component id="14aed" class="javax.swing.JCheckBox" binding="đặtTàiCheckBox" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12065476"/>
+          <enabled value="true"/>
+          <font name="Lucida Sans Typewriter" size="36" style="1"/>
+          <foreground color="-1745074"/>
+          <selected value="false"/>
+          <text value="Đặt tài"/>
+        </properties>
+      </component>
+      <component id="515c8" class="javax.swing.JButton" binding="đặtCượcButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="0" height="0"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1712063"/>
+          <enabled value="false"/>
+          <font name="Franklin Gothic Heavy" size="12" style="3"/>
+          <foreground color="-13947600"/>
+          <hideActionText value="false"/>
+          <text value="Đặt cược"/>
+        </properties>
+      </component>
+      <component id="f262a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
