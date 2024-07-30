@@ -2,6 +2,8 @@ package tech.gui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class RegistrationPage extends JDialog {
     private JTextField tfName;
@@ -18,6 +20,12 @@ public class RegistrationPage extends JDialog {
         super (parent);
         setTitle("Create a new account");
         setContentPane(registerPanel);
+        this.btnRegister.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(registerPanel,"helo");
+            }
+        });
         setMinimumSize(new Dimension(450,450));
         setModal(true);
         setLocationRelativeTo(parent);

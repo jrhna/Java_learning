@@ -7,6 +7,7 @@
     </constraints>
     <properties>
       <background color="-1578781"/>
+      <enabled value="true"/>
     </properties>
     <border type="none"/>
     <children>
@@ -86,7 +87,7 @@
           <borderPainted value="true"/>
           <contentAreaFilled value="true"/>
           <defaultCapable value="true"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <focusPainted value="true"/>
           <focusTraversalPolicyProvider value="false"/>
           <focusable value="true"/>
@@ -103,7 +104,7 @@
           <borderPainted value="true"/>
           <contentAreaFilled value="true"/>
           <defaultCapable value="true"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <focusPainted value="true"/>
           <focusTraversalPolicyProvider value="false"/>
           <focusable value="true"/>
