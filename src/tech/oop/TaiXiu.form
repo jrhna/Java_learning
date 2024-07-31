@@ -19,7 +19,7 @@
           <borderPainted value="false"/>
           <contentAreaFilled value="true"/>
           <defaultCapable value="true"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Dialog" size="36" style="1"/>
           <text value="ĐẶT TÀI"/>
         </properties>
@@ -32,7 +32,7 @@
         </constraints>
         <properties>
           <background color="-1712063"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <font name="Franklin Gothic Heavy" size="12" style="3"/>
           <foreground color="-13947600"/>
           <hideActionText value="false"/>
@@ -48,7 +48,7 @@
           <borderPainted value="false"/>
           <contentAreaFilled value="true"/>
           <defaultCapable value="true"/>
-          <enabled value="false"/>
+          <enabled value="true"/>
           <focusPainted value="true"/>
           <font name="Dialog" size="36" style="1"/>
           <foreground color="-13947600"/>

@@ -10,43 +10,58 @@ public class TaiXiu extends JFrame{
     private JButton datCuocButton;
     private JButton datT;
     private JButton datX;
-
+    protected int num;
+    protected int check;
     public TaiXiu  (){
-        final int[] num = new int[1];
+        setTitle("game");
+        setContentPane(jPanelMain);
+        setSize(400,300);
+
         this.datT.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               num[0] =1;
+               check = ThreadLocalRandom.current().nextInt(0,2);
+                System.out.println(check);
+               num = 1;
             }
         });
         this.datX.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                num[0] =0;
+                check = ThreadLocalRandom.current().nextInt(0,2);
+                num = 0;
+                System.out.println(check);
             }
         });
         this.datCuocButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int check = ThreadLocalRandom.current().nextInt(0,2);
-                if(num[0]==check) {
+
+                if(num == check) {
                     JOptionPane.showMessageDialog(null,"win");
+                    System.out.println(num + " " + check);
                    // datCuocButton.setText("win");
                    // System.out.println();
                 }
+                else
+                {
+                    System.out.println(num + " " + check);
+                    JOptionPane.showMessageDialog(null,"lose");
+                }
             }
         });
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
 
     }
     public static void main(String[] args) {
-       TaiXiu tx = new TaiXiu();
-        tx.setContentPane(tx.jPanelMain);
-        tx.setTitle("Game");
-        tx.setSize(400,300);
-       // tx.pack();
-        tx.setLocationRelativeTo(null);
-        tx.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        tx.setVisible(true);
+       new TaiXiu();
+//        tx.setContentPane(tx.jPanelMain);
+//        tx.setTitle("Game");
+//        tx.
+//       // tx.pack();
+
     }
 
 
