@@ -1,4 +1,4 @@
-package tech.gui.tech28;
+package tech.gui;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;

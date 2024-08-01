@@ -1,4 +1,4 @@
-package tech.gui.login;
+package tech.gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,42 +17,21 @@ public class RegistrationPage extends JDialog {
     private JPanel registerPanel;
 
     public RegistrationPage (JFrame parent){
-        super(parent);
-        initRegister();
-        runRegister();
-    }
-    public void initRegister () {
+        super (parent);
         setTitle("Create a new account");
         setContentPane(registerPanel);
         this.btnRegister.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               // JOptionPane.showMessageDialog(registerPanel,"helo");
-                register();
-
+                JOptionPane.showMessageDialog(registerPanel,"helo");
             }
         });
-        btnCancel.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                dispose();
-            }
-        });
-
-
-        setMinimumSize(new Dimension(450,360));
+        setMinimumSize(new Dimension(450,450));
         setModal(true);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-    }
-
-    private void register() {
-    }
-
-    public void runRegister (){
+        setLocationRelativeTo(parent);
         setVisible(true);
-    }
 
+    }
 
     public static void main(String[] args) {
         RegistrationPage myForm = new RegistrationPage(null);
