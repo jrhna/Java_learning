@@ -1,4 +1,4 @@
-package tech.gui;
+package tech.gui.tech28;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

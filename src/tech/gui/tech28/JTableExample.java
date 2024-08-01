@@ -1,4 +1,4 @@
-package tech.gui;
+package tech.gui.tech28;
 
 import javax.print.attribute.standard.NumberOfInterveningJobs;
 import javax.swing.*;

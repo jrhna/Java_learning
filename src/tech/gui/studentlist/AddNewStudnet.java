@@ -1,7 +1,7 @@
 package tech.gui.studentlist;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,12 +31,7 @@ public class AddNewStudnet extends JDialog{
         setContentPane(pnMain);
         setMinimumSize( new Dimension(400,600));
         setLocationRelativeTo(null);
-        this.btnAdd.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                btnAddActionPerformed(e);
-            }
-        });
+        this.btnAdd.addActionListener(this::btnAddActionPerformed);
         this.btnCLear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -57,7 +52,7 @@ public class AddNewStudnet extends JDialog{
         String id = tfID.getText();
         String name = tfName.getText();
         String className = tfClass.getText();
-        Double gpa = Double.parseDouble(tfGpa.getText());
+        double gpa = Double.parseDouble(tfGpa.getText());
         Student st = new Student(id, name, className, gpa);
     }
     public static void main(String[] args) {
