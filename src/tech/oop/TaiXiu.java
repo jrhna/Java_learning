@@ -10,6 +10,7 @@ public class TaiXiu extends JFrame{
     private JButton datCuocButton;
     private JButton datT;
     private JButton datX;
+    private JButton btnCancle;
     protected int num;
     protected int check;
     public TaiXiu  (){
@@ -38,7 +39,7 @@ public class TaiXiu extends JFrame{
             public void actionPerformed(ActionEvent e) {
 
                 if(num == check) {
-                    JOptionPane.showMessageDialog(null,"win");
+                    JOptionPane.showMessageDialog(null,"Chúc mừng bạn đã thành đại gia\nChơi tiếp để thành tỉ phú nào!!!");
                     System.out.println(num + " " + check);
                    // datCuocButton.setText("win");
                    // System.out.println();
@@ -46,7 +47,16 @@ public class TaiXiu extends JFrame{
                 else
                 {
                     System.out.println(num + " " + check);
-                    JOptionPane.showMessageDialog(null,"lose");
+                    if(check==1){
+                        JOptionPane.showMessageDialog(null,"Bạn đã đặt xĩu\nBạn thua rồi, đặt cược tìm cơ hội mới nào!\nGame này chiến hơn fifai !!!");
+//                        JOptionPane.showMessageDialog(null,"Bạn thua rồi, đặt cược tìm cơ hội mới nào!");
+//                        JOptionPane.showMessageDialog(null,"Game này chiến hơn fifai !!!");
+                    } else {
+                        JOptionPane.showMessageDialog(null,"Bạn đã đặt xĩu\nBạn thua rồi, đặt cược tìm cơ hội mới nào!\nGame này chiến hơn fifai !!!");
+//                        JOptionPane.showMessageDialog(null,"Bạn thua rồi, đặt cược tìm cơ hội mới nào!");
+//                        JOptionPane.showMessageDialog(null,"Game này chiến hơn fifai !!!");
+                    }
+
                 }
             }
         });
@@ -54,6 +64,12 @@ public class TaiXiu extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
 
+        btnCancle.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
     }
     public static void main(String[] args) {
        new TaiXiu();
