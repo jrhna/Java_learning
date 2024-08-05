@@ -14,17 +14,14 @@ public class TaiXiu extends JFrame{
     protected int num;
     protected int check;
     public TaiXiu  (){
-        setTitle("game");
+        setTitle("Nhà cái đến từ CTUer");
         setContentPane(jPanelMain);
         setSize(400,300);
 
-        this.datT.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-               check = ThreadLocalRandom.current().nextInt(0,2);
-                System.out.println(check);
-               num = 1;
-            }
+        this.datT.addActionListener(e -> {
+           check = ThreadLocalRandom.current().nextInt(0,2);
+            System.out.println(check);
+           num = 1;
         });
         this.datX.addActionListener(new ActionListener() {
             @Override
@@ -48,11 +45,11 @@ public class TaiXiu extends JFrame{
                 {
                     System.out.println(num + " " + check);
                     if(check==1){
-                        JOptionPane.showMessageDialog(null,"Bạn đã đặt xĩu\nBạn thua rồi, đặt cược tìm cơ hội mới nào!\nGame này chiến hơn fifai !!!");
+                        JOptionPane.showMessageDialog(null,"Bạn đã đặt Xĩu\nBạn thua rồi, đặt cược tìm cơ hội mới nào!\nGame này chiến hơn fifai !!!");
 //                        JOptionPane.showMessageDialog(null,"Bạn thua rồi, đặt cược tìm cơ hội mới nào!");
 //                        JOptionPane.showMessageDialog(null,"Game này chiến hơn fifai !!!");
                     } else {
-                        JOptionPane.showMessageDialog(null,"Bạn đã đặt xĩu\nBạn thua rồi, đặt cược tìm cơ hội mới nào!\nGame này chiến hơn fifai !!!");
+                        JOptionPane.showMessageDialog(null,"Bạn đã đặt Tài\nBạn thua rồi, đặt cược tìm cơ hội mới nào!\nGame này chiến hơn fifai !!!");
 //                        JOptionPane.showMessageDialog(null,"Bạn thua rồi, đặt cược tìm cơ hội mới nào!");
 //                        JOptionPane.showMessageDialog(null,"Game này chiến hơn fifai !!!");
                     }

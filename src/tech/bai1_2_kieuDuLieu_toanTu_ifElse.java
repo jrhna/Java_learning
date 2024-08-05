@@ -1,3 +1,5 @@
+package tech;
+
 import java.util.Scanner;
 
 public class bai1_2_kieuDuLieu_toanTu_ifElse {
